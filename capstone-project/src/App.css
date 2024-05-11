@@ -28,6 +28,8 @@ nav ul li {
 
 nav ul li a {
   color: #000;
+  font-size: 18px;
+  font-weight:500;
 }
 
 nav ul li a:hover {
@@ -108,7 +110,7 @@ button {
   position: absolute;
   right: 13%;
   top: 15%;
-  width: 300px;
+  width: 350px;
 }
 
 .banner-img img {
