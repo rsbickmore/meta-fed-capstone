@@ -10,35 +10,36 @@ const Nav = () => {
 
     return (
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
-            <a href='/' className="logo">
+            <a href="/" className="logo">
                 <img src={logo} width={210} height={58} alt="logo" />
             </a>
 
-            {/*mobile nav bar */}
-            <div className="menu-icon" onClick={toggleMenu}>
+            {/*mobile nav bar*/}
+            <div  className="menu-icon" onClick={toggleMenu}>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
             </div>
 
+            {/*nav items*/}
             <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
                 <li>
-                    <a href='/'>Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href='/'>About</a>
+                    <a href="/">About</a>
                 </li>
                 <li>
-                    <a href='/'>Menu</a>
+                    <a href="/">Menu</a>
                 </li>
                 <li>
-                    <a href='/'>Reservations</a>
+                    <a href="/">Reservations</a>
                 </li>
                 <li>
-                    <a href='/'>Order Online</a>
+                    <a href="/">Order Online</a>
                 </li>
                 <li>
-                    <a href='/'>Login</a>
+                    <a href="/">Login</a>
                 </li>
             </ul>
         </nav>
