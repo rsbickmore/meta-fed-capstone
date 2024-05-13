@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter,Routes,Route,Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import bannerImg from '../images/presentation-lg.jpg'
 
 const Header = () => {
@@ -24,5 +24,3 @@ const Header = () => {
 };
 
 export default Header;
-
-//11:46//
