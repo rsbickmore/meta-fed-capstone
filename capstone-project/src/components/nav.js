@@ -21,7 +21,7 @@ const Nav = () => {
                 <div className="bar"></div>
             </div>
 
-            {/*nav items*/}
+            {/*nav items - use React fragments instead of div tags where redundant*/}
             <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
                 <li>
                     <a href="/">Home</a>
