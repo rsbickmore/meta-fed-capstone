@@ -1,3 +1,4 @@
+
 body {
   width: 80%;
   margin: 0 auto;
@@ -89,9 +90,11 @@ h3 {
 
 .banner p {
   font-size: 20px;
-  max-width: 520px;
+  /*font-weight: 500;*/
+  max-width: 300px;
   line-height: 1.5;
   margin-bottom: 30px;
+  /*font-family: "Karla";*/
 }
 
 button {

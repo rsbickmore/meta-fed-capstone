@@ -19,7 +19,7 @@ const Main = () => {
     const fetchAPI = function(date) {
         let result = [];
         let random = seedRandom(date.getDate());
-        
+
         for (let i = 17; i <=23; i++) {
             if (random() < 0.5) {
                 result.push(i + ':00');
@@ -29,11 +29,11 @@ const Main = () => {
             }
         }
         return result;
-    }
+    };
 
     const submitAPI = function(formData) {
         return true;
-    }
+    };
 
     const initialState = {availableTimes: fetchAPI(new Date())};
     const [state, dispatch] = useReducer(updateTimes, initialState);
@@ -42,7 +42,7 @@ const Main = () => {
         return {availableTimes: fetchAPI(new Date(date))};
     }
 
-    const navigate = useNavigate(); //29:39 to see where he deletes a bunch of stuff
+    const navigate = useNavigate();
     function submitForm (formData) {
         if(submitAPI(formData)) {
             navigate('/confirmed')
