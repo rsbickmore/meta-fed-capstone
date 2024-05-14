@@ -6,6 +6,7 @@ import BookingForm from './components/BookingForm'
 import Booking from './components/booking';
 import BookingConfirm from './components/BookingConfirm';
 import Main from './components/main';
+import Menu from './components/menu';
 import Footer from './components/footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Booking/>
     <BookingConfirm/>
     <Main/>
+    <Menu/>
     <Footer/>
     </>
   );

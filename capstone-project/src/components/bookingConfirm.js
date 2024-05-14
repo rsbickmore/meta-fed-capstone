@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const BookingConfirm = () => {
@@ -6,7 +7,6 @@ const BookingConfirm = () => {
             <div>
                 <h1>Your table has been <span>reserved!</span></h1>
             </div>
-
         </div>
     );
 };
