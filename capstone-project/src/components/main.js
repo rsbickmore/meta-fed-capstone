@@ -20,12 +20,13 @@ const Main = () => {
         let result = [];
         let random = seedRandom(date.getDate());
 
-        for (let i = 17; i <=23; i++) {
+        for (let i = 16; i <= 21; i++) { // Adjusted for 12-hour clock (5 PM to 11 PM)
+            let hour = i > 12 ? i - 12 : i; // Convert to 12-hour format
             if (random() < 0.5) {
-                result.push(i + ':00');
+                result.push(hour + ':00 ' + (i >= 12 ? 'PM' : 'AM')); // Append AM or PM based on the hour
             }
-            if(random() > 0.5) {
-                result.push(i + ':30');
+            if (random() > 0.5) {
+                result.push(hour + ':30 ' + (i >= 12 ? 'PM' : 'AM')); // Append AM or PM based on the hour
             }
         }
         return result;
