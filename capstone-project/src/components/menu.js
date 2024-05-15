@@ -20,9 +20,9 @@ const menu = () => {
             title: "Add to cart?",
             text: "",
             icon: "warning",
-            showCancelButton: false,
-            /*confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",*/
+            showCancelButton: true,
+            confirmButtonColor: "#CF470C",
+            cancelButtonColor: "#495E57",
             confirmButtonText: "Yes, order it!",
             reverseButtons: true
           }).then((result) => {

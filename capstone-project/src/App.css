@@ -7,6 +7,7 @@ body {
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -16,7 +17,7 @@ nav {
 }
 
 .navbar {
-  padding: 10px 13%;
+  padding: 5px 13%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,6 +32,7 @@ nav ul li a {
   color: #000;
   font-size: 18px;
   font-weight:500;
+  font-style: "Karla";
 }
 
 nav ul li a:hover {
@@ -70,30 +72,47 @@ nav ul li a:hover {
 
 .header {
   background-color: #495E57;
-  padding: 40px 0;
+  padding: 0 0 30px 0;
 }
 
 .header section {
   color: #EDEFEE;
-  padding: 10px 13%;
+  padding: 0 13%;
   position: relative;
 }
 
 h2 {
   color: #F4CE14;
-  font-size: 40px;
+  font-size: 64pt;
+  font-family: "Markazi Text";
+  font-weight: 500;
+  /*background-color: green;*/
+  margin: 0;
+  line-height: .7;
+  padding-top: 20px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 40pt;
+  font-family: "Markazi-Text";
+  font-weight: 400;
+  /*background-color: pink;*/
+  margin: 0;
+  padding-bottom: 15px;
+  line-height: .8;
 }
+
+/*.banner { wasn't in original code*/
+  /*background-color: blue;
+}*/
 
 .banner p {
   font-size: 18px;
   font-weight: 500;
-  max-width: 245px;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  max-width: 300px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  margin-top: 10px;
   font-family: "Karla";
 }
 
@@ -103,16 +122,17 @@ button {
   padding: 14px 18px;
   border: none;
   text-decoration: none;
-  border-radius: 12px;
-  font-size: 20px;
+  border-radius: 16px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  font-family: "Karla";
 }
 
 .banner-img {
   position: absolute;
   right: 13%;
-  top: 15%;
+  top: 10%;
   width: 350px;
 }
 
@@ -135,6 +155,7 @@ input, label {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
 #book-date, #book-time, #book-guests, #book-occasion {
   background: #BDBDBD43;
   padding: 8px 24px;
@@ -173,6 +194,11 @@ input, label {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.menu-header h2 {
+  font-size: 40pt;
+}
+
 .cards{
   margin-top: 30px;
   display: flex;
@@ -183,16 +209,16 @@ input, label {
 }
 
 .menu-items{
-  /* height: 400px; */
+  height: 500px;
   width: 350px;
   background: #a9c8be;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .menu-container img{
   width: 100%;
   height: 233px;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .menu-content{
@@ -202,6 +228,11 @@ input, label {
 .menu-content .heading{
   display: flex;
   justify-content: space-between;
+  line-height: 1.2;
+}
+
+.menu-content button {
+  background-color: blue; /*not in original code - used to style Order Now buttons*/
 }
 
 .orderbtn{
@@ -269,11 +300,11 @@ footer ul li{
     background: #333333;
   }
 
-  /*.banner-img{
+  .banner-img{
     display: none;
-  }*/
+  }
 
-  form, .comfirm{
+  form, .confirm{
     padding: 10px 8%;
   }
 
