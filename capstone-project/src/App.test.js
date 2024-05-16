@@ -12,7 +12,7 @@ test('Renders the Header heading', () => {
 
   const headingElementNew = screen.getByText("Choose Date");
   expect(headingElementNew).toBeInTheDocument();
-})
+});
 
 test('Initialize/Update Times', () => {
 render(<BrowserRouter><App /></BrowserRouter>);
